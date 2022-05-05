@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btn-back {
+  position: fixed;
+  z-index: 999;
+  bottom: 3vh;
+  left: 5vw;
+}
+#btn-back svg {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  color: #0077ff;
+  border-radius: 60%;
+}
+
+#btn-back:hover > svg {
+  color: #2389ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+}
+
+.container {
+  margin-top: 70px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #222;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .title {
+  height: max-content;
+  line-height: 70px;
+}
+header h1 {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.content-task {
+  padding-top: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.content-task .task {
+  width: 95%;
+  height: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+  color: #222;
+}
+
+.content-task .task {
+  width: 95%;
+  height: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background: none;
+  border: none;
+}
+button svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+button svg:hover {
+  color: #810202;
+}
+
+@media (min-width: 768px) {
+  .content-task {
+    padding-top: 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .content-task .task {
+    width: 55%;
+    height: max-content;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+/*# sourceMappingURL=delete-task.css.map */

@@ -1,0 +1,17 @@
+#btn-back {
+    position: fixed;
+    z-index: 999;
+    bottom: 3vh;
+    left: 5vw;
+    svg {
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        color: rgb(0, 119, 255);
+        border-radius: 60%;
+    }
+}
+
+#btn-back:hover > svg{
+        color: rgb(35, 137, 255);
+}

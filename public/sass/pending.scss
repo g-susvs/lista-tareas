@@ -1,0 +1,24 @@
+@use './modules/base';
+@use './modules/btnback';
+
+
+.content-task {
+  .task {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(253, 203, 203);
+
+
+    b {
+      margin-right: 10px;
+      color: rgb(107, 0, 0);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .content-task {
+    margin: auto;
+    width: 55%;
+  }
+}

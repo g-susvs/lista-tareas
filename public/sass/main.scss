@@ -1,0 +1,125 @@
+@use './modules/variables';
+
+body {
+    background: variables.$fondo;
+}
+.container{
+    margin-top: 70px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: variables.$fondo;
+    color: variables.$color-text;
+    text-align: center;
+
+    .title {
+
+        height: max-content;
+        line-height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            padding-left: 10px;
+            padding-top: 10px;
+            letter-spacing: 1px;
+            font-size: 2.3rem;
+            font-weight: bold;
+            color: variables.$color-text;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+
+    }
+}
+
+
+.content-menu {
+
+    padding-top: 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+    background: variables.$fondo;
+
+
+    .card-item {
+        width: 85%;
+        height: 80px;
+        border-radius: 15px;
+        text-align: center;
+
+        a {
+
+            display: block;
+            height: 100%;
+
+            text-decoration: none;
+            color: variables.$color-text;
+            font-size: 1.5rem;
+            line-height: 80px;
+
+            cursor: pointer;
+        }
+    }
+
+    .card-item:hover {
+        opacity: 0.8;
+    }
+
+    .card-item:nth-child(1) {
+        background: variables.$fondo-deg1;
+
+    }
+
+    .card-item:nth-child(2) {
+        background: variables.$fondo-deg2;
+    }
+
+    .card-item:nth-child(3) {
+        background: variables.$fondo-deg3;
+
+    }
+
+    .card-item:nth-child(4) {
+        background: variables.$fondo-deg4;
+
+    }
+
+    .card-item:nth-child(5) {
+        background: variables.$fondo-deg5
+    }
+}
+
+
+footer {
+    background: variables.$fondo;
+
+    p {
+        color: variables.$color-text;
+        ;
+        text-align: center;
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media(min-width: 768px) {
+    .card-item {
+        width: 768px;
+    }
+}

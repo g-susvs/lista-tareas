@@ -1,0 +1,55 @@
+@use './modules/base';
+@use './modules/variables';
+
+  .content-task{
+    
+    .task {
+        width: 95%;
+        height: max-content;
+        padding: 10px;
+        border-radius: 5px;
+        background: variables.$color-text;
+        color: variables.$fondo;
+        display: flex;
+        justify-content: space-between;
+      }
+  }
+
+
+  button{
+      background: none;
+      border: none;
+      svg{
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+      }
+      svg:hover{
+        color: rgb(129, 2, 2);
+      }
+  }
+  
+  
+  @media (min-width: 768px) {
+    .content-task {
+      padding-top: 30px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    
+  
+      .task {
+        width: 55%;
+        height: max-content;
+        padding: 10px;
+        border-radius: 5px;
+       
+      }
+    }
+}
+  
+
+  
