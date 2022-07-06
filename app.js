@@ -26,6 +26,9 @@ app.get('/completar', (req, res) => {
 app.get('/eliminar', (req, res) => {
     res.render('eliminar');
 })
+app.get('/*',(req,res)=>{
+    res.send('404 not FOUND')
+})
 app.listen(port, () => {
     console.log(`Server corriendo en el puerto http://localhost:${port}`);
 });
